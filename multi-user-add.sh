@@ -5,7 +5,7 @@
 randpw() { < /dev/urandom tr -dc _'12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB'|  head -c${1:-16};echo;}
 
 
-## Read the users from first Parameter (can be file) 
+## Read the users from first Parameter (must be file) 
 for i in $( cat $1) ;
     do 
 
