@@ -3,7 +3,7 @@
 ## This script will creat multiple users with random generated psasword (16 char) via randpw function.
 
 randpw() { < /dev/urandom tr -dc _'12345!@#$%qwertQWERTasdfgASDFGzxcvbZXCVB'|  head -c${1:-16};echo;}
-$date=date +"%m.%d.%Y"
+date=date +"%m.%d.%Y"
 
 ## Read the users from first Parameter (must be file) 
 for i in $( cat $1) ;
