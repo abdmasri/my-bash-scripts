@@ -31,6 +31,3 @@ echo -e  "password for $i: $newpw"
 done
 
 echo -e  "END $time_var\n\n" >> /tmp/muser-log-$date_var.log
-
-
-############# Test Restore ############
